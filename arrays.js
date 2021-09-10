@@ -34,4 +34,20 @@ const numbers = [1, 2, 3, 4, 5]
   Return the answers array inside of the function.
 */
 
-// CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big');
+    } else {
+      answers.push('small');
+    }
+  }
+  return answers;
+};
+
+let bigOrSmallArray = [3,121, 130, 4, 263, 14, 33, 66, 76]
+let arrayChecker = bigOrSmall(bigOrSmallArray);
+console.log(arrayChecker);
+
+

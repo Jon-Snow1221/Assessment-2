@@ -14,7 +14,16 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
+let me = {
+  firstName: 'Jonathan',
+  state: 'Utah',
+  age: 30,
+  greeter() {
+    console.log(`Hello! My name is ${firstName} and I live in ${state}.`)
+  }
+} 
+
+console.log(me);
 
 
 
