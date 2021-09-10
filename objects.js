@@ -18,12 +18,12 @@ let me = {
   firstName: 'Jonathan',
   state: 'Utah',
   age: 30,
-  greeter() {
-    console.log(`Hello! My name is ${firstName} and I live in ${state}.`)
+  greeter: function() {
+    console.log('Hello! My name is', this.firstName, 'and I live in', this.state)
   }
 } 
 
-console.log(me);
+me.greeter();
 
 
 
