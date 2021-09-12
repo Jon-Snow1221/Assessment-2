@@ -63,5 +63,5 @@ function iLove(name, love) {
   return `${name} loves ${love}`
 };
 
-let loveStatement = iLove('Jon', 'swords');
+let loveStatement = iLove('Jon', 'dragons');
 console.log(loveStatement);

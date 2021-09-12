@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = " Software that tracks changes in the code of a specific file."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = "Platform that allows users to upload their project's code and track changes to specific files/projects."
 
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
@@ -33,7 +33,10 @@
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
+let init = {
+    description: "Creates a new git repository",
+    code: git init
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,7 +44,10 @@
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+let clone = {
+    description: "Clones an existing repository",
+    code: git clone
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -49,7 +55,10 @@
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+let status = {
+    description: "What status does",
+    code: init
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,7 +66,10 @@
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+let add = {
+    description: "Tells Git that you want to include updates to a file in the next commit",
+    code: git add
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +77,10 @@
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+let commit = {
+    description: "Commits the snapshot of your file that you created with git add to your project history",
+    code: git commit
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -74,4 +89,7 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+    description: "Sends teh committed changes to remote repositories, so that other people can access those updated files",
+    code: git push
+}

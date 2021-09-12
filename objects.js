@@ -27,8 +27,6 @@ me.greeter();
 
 
 
-
-
 //////////////////PROBLEM 2////////////////////
 /*
   Write a function called carFactory that takes in three parameters: a make, model, and year.  
@@ -53,4 +51,17 @@ me.greeter();
   }
 */
 
-//CODE HERE
+function carFactory(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+
+  if (year > 2018) {
+    this.isNew = true;
+  } else {
+    this.isNew = false;
+  }
+};
+
+let newCar = new carFactory('toyota', 'camry', 2017);
+console.log(newCar);
