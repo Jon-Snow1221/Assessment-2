@@ -1,12 +1,12 @@
-console.log('Welcome to the Password Validator!');
+console.log('Welcome to the Password Validator! Please type in your password below:');
 
-function CheckPassword(inputtxt) {
-    let userPassword = /^[A-Za-z]\w{10}$/;
-    if (inputtxt.value.match(userPassword)) {
+function CheckPassword() {
+    let userPassword = document.getElementById("pswd").value;
+    if (userPassword.length > 10) {
         alert('Correct!')
         return true;
     } else {
         alert('Incorrect. Please try again.')
         return false;
     }
-}
+};
